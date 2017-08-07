@@ -4,6 +4,7 @@ h1,
 h2,
 h3,
 p,
+ol,
 ul,
 li,
 a {
@@ -12,8 +13,6 @@ a {
   border: 0;
 }
 
-body {
-}
 h1 {
   margin: 10px 0 15px 0;
 }
@@ -46,18 +45,16 @@ nav li {
   display: inline;
 }
 
-h1 {
-  font-size: 6em;
-}
 .recipes {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
 .recipes li {
   border: 1px solid #b56663;
-  padding-left: 15;
+  padding-left: 15px;
 }
+
 .recipes h3 {
   border-bottom: 0;
 }
@@ -76,6 +73,7 @@ header a,
 header h1 {
   color: #fff;
 }
+
 header h1,
 header nav {
   text-align: center;
@@ -87,17 +85,41 @@ main {
   margin: 30px auto 0 auto;
   width: 500px;
 }
+
 .photos {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
-.photos li {
-  display: inline;
-  padding-left: 11px;
+.photos img {
+  width: 100%;
 }
 
-.photos img {
-  width: 153px;
-  height: auto;
+/* Float and percentage-based layout */
+/* .photos li {
+  float: left;
+  width: 33.3%;
+}
+
+ .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}    */
+
+/* Flex-based layout */
+/* .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}    */
+
+/* .photos li:last-child {
+  flex-grow: 0;
+} */
+
+/* Grid-based layout */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
