@@ -87,3 +87,17 @@ main {
   margin: 30px auto 0 auto;
   width: 500px;
 }
+.photos {
+  list-style: none;
+  padding: 0;
+}
+
+.photos li {
+  display: inline;
+  padding-left: 11px;
+}
+
+.photos img {
+  width: 153px;
+  height: auto;
+}
