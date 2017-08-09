@@ -8,18 +8,27 @@ p,
 ol,
 ul,
 li,
+footer
 a {
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: 100%;
+  font: inherit;
 }
-
+body {
+  font-family: Helvetica, Arial, 'Times New Roman', sans-serif;
+}
 h1 {
   margin: 10px 0 15px 0;
 }
 
 h2 {
+  color: #7facaa
   margin: 10px 0 20px 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 h3 {
@@ -86,6 +95,10 @@ main {
   margin: 30px auto 0 auto;
   width: 500px;
 }
+main p{
+  line-height: 1.5;
+  
+}
 
 .photos {
   list-style-type: none;
@@ -136,4 +149,12 @@ main {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-gap: 15px;
+}
+footer p{
+  color: #aaa;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
 }
